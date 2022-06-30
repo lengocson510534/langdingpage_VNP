@@ -1,0 +1,36 @@
+.network {
+    @include tablet {
+        margin-bottom: 3rem;
+    }
+    &-header{
+        max-width: 555px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-heading {
+        max-width: 384px;
+        margin: 0 auto;
+    }
+    &-text {
+        margin: 20px 0 150px;
+        span {
+            color: var(--color-text-primary);
+        }
+    }
+    
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            img {
+                width: 50%;
+                margin: 2px auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin: 65px 0 65px;
+    border-radius: 10px;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 0 20px 40px;
+    }
+    
+    &-content {
+        padding: 59px 0 59px 70px;
+        @include tablet {
+            padding: 25px 0;
+        }
+    }
+    &-heading {
+        max-width: 372px;
+        margin: 20px auto 0;
+    }
+
+    &-btn {
+        padding: 18px 65px;
+        font-weight: 700;
+        line-height: calc(25 / 16);
+        a {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.plan {
+    padding: 127px 0 150px;
+    //margin: 200px 0 150px
+    &-header{
+        max-width: 555px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-heading {
+        margin-bottom: 20px;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0 2rem;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+        }
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 80px 70px 50px;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 60px;
+        border: 1px solid transparent;
+        transition: 0.25s ease;
+
+        @include tablet {
+            width: 50%;
+            margin: 2rem auto;
+        }
+        @include mobile {
+            width: 100%;
+            margin: 1rem auto;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid var(--color-primary);
+        }
+        &:hover .plan-btn{
+            background-color: var(--color-primary);
+            color: white;
+            box-shadow: 0 0 10px var(--color-primary);    
+        }
+    }
+    &-img {
+        max-width: 145px;
+        margin: 0 auto;
+    }
+    &-name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(30 / 18);
+        color: var(--color-text-primary);
+        margin: 30px 0;
+    }
+    &-service {
+        display:flex;
+        align-items: center;
+        gap: 0 20px;
+        margin: 10px 0;
+
+        i {
+            color: var(--color-icon);
+        }
+    }
+    &-price {
+        color: var(--color-text-primary);
+        font-weight: 500;
+        font-size: 25px;
+        line-height: calc(30 / 25);
+        margin: 50px 0 20px;
+
+        span {
+            color: var(--text-gray);
+        }
+    }
+    &-btn {
+        padding: 13px 63px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(19 / 16);
+    }
+
+    &-select {
+        margin-top: auto;
+    }
+}

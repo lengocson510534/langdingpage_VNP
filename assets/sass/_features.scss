@@ -1,0 +1,33 @@
+.features {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 170px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    &-content {
+        max-width: 428px;
+    }
+
+    &-heading {
+        max-width: 384px;
+    }
+    &-desc {
+        line-height: calc(30 / 16);
+        margin: 20px 0;
+    }
+
+    &-item {
+        display:flex;
+        align-items: center;
+        gap: 0 10px;
+
+        i {
+            color: var(--color-icon);
+        }
+    }
+
+}
