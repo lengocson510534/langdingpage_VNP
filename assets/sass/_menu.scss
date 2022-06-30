@@ -44,3 +44,11 @@
         line-height: calc(19 / 16);
     }
 }
+
+.toggle-close {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}
